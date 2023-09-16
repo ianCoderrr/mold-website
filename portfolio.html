@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Moldedcraft</title>
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <link rel="stylesheet" href="ligature.css">
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+
+
+</head>
+
+<body>
+
+<!-- ######################## Main Menu ######################## -->
+ 
+<nav>
+
+     <div class="twelve columns header_nav">
+     <div class="row">
+      
+        <ul id="menu-header" class="nav-bar horizontal">
+          <li class="company_name">
+            <img src="images/companylogo.svg" alt="Company Logo">
+        </li>
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="about.html">About Us</a></li>
+          <li class=""><a href="products-page.html">Products</a></li>
+          <li class="active"><a href="portfolio.html">Portfolio</a></li>
+          <li class=""><a href="benifits.html">Benifits</a></li>
+          <li class=""><a href="contact.html">Contact Us</a></li>
+      
+        </ul>
+        
+        <script type="text/javascript">
+         //<![CDATA[
+         $('ul#menu-header').nav-bar();
+          //]]>
+        </script> 
+      </div>  
+      </div>  
+</nav> 
+<!-- ######################## Header ######################## -->  
+
+  <div class="hero" id="home">
+  <video autoplay loop muted playsinline class="video-background">
+    <source src="images/portfolio.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+</div>
+       
+<!-- ######################## Gallery Section ######################## -->
+<style>
+  .section_layer{
+    background-image: url("your-background-image-url.jpg");
+    background-image: url("images/abs.jpg"), url("your-background-image-url.jpg");
+    background-size: cover, auto; 
+    background-position: center, left top; 
+   
+  }
+  .image-caption{
+    text-align: center;
+  }
+
+  .th img {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+<style>
+  /* Add this style to make the images circular */
+  .box.photo {
+    border-radius: 10px; /* Adjust the value as needed for the desired roundness */
+    overflow: hidden; /* Ensure the image doesn't overflow outside the rounded container */
+  }
+  .box.photo img {
+    border-radius: 2%;
+  }
+</style>
+<style>
+  /* Your existing CSS styles */
+
+  /* Add ease-in-out transition to all properties */
+  .image-container {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+
+  /* Hover effect for image container */
+  .image-container:hover {
+    z-index: 1; /* Bring the hovered container to the front layer */
+    position: relative; /* Set position to create stacking context */
+    transform: scale(2); /* Double the size on hover */
+    perspective: 1000px; /* Add perspective for 3D flip effect */
+  }
+
+  /* Hover effect for image caption */
+  .image-container:hover .image-caption {
+    transform: scale(2); /* Double the size on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add a box shadow to the caption */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color for better readability */
+    padding: 5px 10px; /* Optional: Add some padding to the caption */
+  }
+
+  /* Rest of the containers in the back layer */
+  .image-container:not(:hover) {
+    z-index: 0; /* Push unselected containers to the back layer */
+  }
+
+  /* Reset scale on unselected images */
+  .image-container:not(:hover) img {
+    transform: scale(1); /* Reset to original size on unselected images */
+  }
+
+  /* Reset scale on unselected captions */
+  .image-container:not(:hover) .image-caption {
+    transform: scale(1); /* Reset to original size on unselected captions */
+  }
+
+  /* Hover effect for .box.photo to double the size */
+  .box.photo:hover {
+    transform: scale(1.25);
+    z-index: 2; /* Set a higher z-index to bring the hovering layer in front of other content */
+  }
+</style>
+
+
+<section class="section_layer">
+  <div class="row">
+    <div id="container">
+      <table>
+        <tr>
+          <!-- photo 1 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/hotel.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>HOTEL</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+
+            </div>
+          
+          <!-- photo 2 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/archi.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>ARCHITECTURE</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 3 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/food.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>FOOD AND RESTAURANT</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 4 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/education.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>EDUCATION</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 5 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/automobile.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>AUTOMOBILE</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 6 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/const.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>CONSTRUCTION</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 7 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/event.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>EVENTS</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 8 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/oil.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>OIL INDUSTRY</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 9 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/rescue.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>RESCUE & EMERGENCY</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 10 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/trade.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>TRADING</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 11 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/legal.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>LEGAL SERVICE</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+          
+          <!-- photo 12 -->
+          
+            <div class='box photo col2'>
+              <a href="#"><img src='images/realestate.jpg' alt="desc" style="width: 200px; height: 150px;" /></a>
+              <h4 style="text-align:center; font-family: sans-serif;"><strong>REAL ESTATE</strong></h4>
+              <button class="active center-button" onclick="window.location.href = 'products-page.html';">Learn More</button>
+            </div>
+        </tr>
+      </table>
+
+    </div> 
+    <article class="row">
+      <div class="twelve columns">
+        <h4 style="text-align: center;"> Company's Mission Statement</h4>
+      </div>
+    </article> 
+  
+    <div class="row">
+      <div class="twelve columns">
+  
+      <dl class="tabs three-up">
+        <dd class="active"><a href="#simple1">Narratives</a></dd>
+        <dd><a href="#simple2">Organizational Goals</a></dd>
+        <dd><a href="#simple3">Branding Elements</a></dd>
+      </dl>
+      
+      <ul class="tabs-content">
+        <li class="active" id="simple1Tab">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum porttitor lacus, eget commodo turpis laoreet at. Donec pretium, enim ut tempor mattis, nisi nunc dapibus dui, et ultricies odio justo a elit.</p>
+        <ul>
+          <li>Lorem</li>
+          <li>Ipsum</li>
+          <li>Dolor</li>
+        </ul>
+       
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum porttitor lacus, eget commodo turpis laoreet at. Donec pretium, enim ut tempor mattis, nisi nunc dapibus dui, et ultricies odio justo a elit.</p> 
+       
+        </li>
+        <li id="simple2Tab"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum porttitor lacus, eget commodo turpis laoreet at. Donec pretium, enim ut tempor mattis, nisi nunc dapibus dui, et ultricies odio justo a elit.</p> </li>
+        <li id="simple3Tab"><p><strong>Promise</strong> lorem ipsum</p> <p><strong>Performance</strong> Product</p> <p><strong>Positioning</strong> Defined</p></li>
+      </ul>
+  
+      </div>
+    </div>
+
+</section>  
+  
+
+  <section class="section_dark">
+     <div class="row">
+      <h3 style="color: white; text-align: center;">&#169; 2022 Moldedcraft Consulting Corp. All rights reserved</h3>
+
+      </div>
+  </section>
+        
+<!-- ######################## Footer ######################## -->  
+      
+<style>
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .footer a {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Add transition effect to smooth color change on hover */
+  }
+
+  .footer a::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    transition: transform 0.3s; /* Add transition effect to smooth image scaling on hover */
+  }
+
+  .footer a.twitter::before {
+    background-image: url('images/twitter.png'); /* Replace with the path to your Twitter logo image */
+    background-size: contain;
+  }
+
+  .footer a.facebook::before {
+    background-image: url('images/facebook.png'); /* Replace with the path to your Facebook logo image */
+    background-size: contain;
+  }
+
+  .footer a.instagram::before {
+    background-image: url('images/instagram.png'); /* Replace with the path to your Instagram logo image */
+    background-size: contain;
+  }
+
+  /* Hover effect styles */
+  .footer a:hover {
+    color: #203672; /* Change text color on hover (adjust the color to your preference) */
+  }
+
+  .footer a:hover::before {
+    transform: scale(1.2); /* Enlarge the image on hover (adjust the scale factor to your preference) */
+  }
+</style>
+<footer>
+
+          <div class="twelve columns footer">
+            <a href="http://twitter.com/dieterarno" class="twitter">Twitter</a>
+            <a href="http://csstemplateheaven.com/csstemplateheaven" class="facebook">Facebook</a>
+            <a href="http://instagram.com/dieterarno" class="instagram">Instagram</a>
+          </div>
+  
+
+</footer>
+
+
+		<!-- Included JS Files (Compressed) -->
+		<script src="javascripts/foundation.min.js" type="text/javascript">
+		</script>
+		<!-- Initialize JS Plugins -->
+		<script src="javascripts/app.js" type="text/javascript">
+		</script>
+
+		</body>
+		</html>
